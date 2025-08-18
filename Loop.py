@@ -7,6 +7,7 @@ while run:
     print(Counter)
     if Counter == Skip:
         print("Loop skipped at", Counter)
+        # Increment Skip to set the next value at which the loop will be skipped
         Skip += 5
     if Counter >= Stop:
         print("Loop stopped at", Counter)
