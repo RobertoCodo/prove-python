@@ -39,10 +39,12 @@ while True:
         print(f"Il risultato della moltiplicazione è: {risultato}")
     elif action == "divisione" or action == "/":
         numero1 = float(input("Inserisci il primo numero: "))
-        numero2 = float(input("Inserisci il secondo numero: "))
-        if numero2 == 0:
-            print("Errore: divisione per zero. Inserisci un secondo numero diverso da zero.")
-            continue
+        while True:
+            numero2 = float(input("Inserisci il secondo numero: "))
+            if numero2 == 0:
+                print("Errore: divisione per zero. Inserisci un secondo numero diverso da zero.")
+            else:
+                break
         risultato = numero1 / numero2
         print(f"Il risultato della divisione è: {risultato}")
     elif action == "potenza" or action == "**":
