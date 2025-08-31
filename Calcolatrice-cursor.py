@@ -2,6 +2,9 @@
 # Calcolatrice semplice - chiede operazione, poi due numeri, con controllo input alfabetico
 
 def scegli_operazione():
+    """
+    Funzione per scegliere l'operazione
+    """
     ops = {
         '+': 'add',
         'somma': 'add',
